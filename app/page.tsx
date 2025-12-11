@@ -11,15 +11,16 @@ export default function Home() {
   useEffect(() => {
     alert(`name changed to ${name}`);
   }, [name])
+  
 
   const changeColor = (name: name) => {
     switch(name){
-      case "anshu": 
+      case "anshu":
         return "text-red-600";
       case "apurba":
         return "text-green-600";
       case "rashika":
-        return "text-blue-600"
+        return "text-indigo-600"
     }
   }
 
@@ -46,4 +47,3 @@ export default function Home() {
 
   );
 }
-
